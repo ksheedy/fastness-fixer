@@ -208,3 +208,135 @@ svg.img-flex {
   top: 0;
   width: 100%;
 }
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.center-text,
+.center-flow {
+  text-align: center;
+}
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no-auto-margins,
+.not-centered {
+  /* stylelint-disable declaration-no-important */
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  /* stylelint-enable */
+}
+
+.center-content,
+.center-content-vertical,
+.center-contents,
+.center-contents-vertical {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-flex-direction: column wrap;
+  -ms-flex-direction: column wrap;
+  flex-flow: column wrap;
+}
+
+.center-content-start,
+.center-content-vertical-start,
+.center-contents-start,
+.center-contents-vertical-start {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column wrap;
+  -ms-flex-direction: column wrap;
+  flex-flow: column wrap;
+}
+
+.center-content-horizontal,
+.center-contents-horizontal {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-flex-direction: row wrap;
+  -ms-flex-direction: row wrap;
+  flex-flow: row wrap;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block, .ib {
+  display: inline-block;
+}
+
+.valign-top {
+  vertical-align: top;
+}
+
+.valign-bottom {
+  vertical-align: bottom;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+[class*="pin-"],
+.absolute {
+  position: absolute;
+}
+
+.pin-top-left,
+.pin-left-top,
+.pin-tl,
+.pin-lt {
+  top: 0;
+  left: 0;
+}
